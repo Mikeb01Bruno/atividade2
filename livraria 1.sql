@@ -118,7 +118,7 @@ where Ano_de_Publicacao <= '2017';
 -- 9° Trazer o nome dos autores com livros publicados pela editora Sextante com mais de 200 páginas
 
 select id, Livro, Editora, Num_Pag from Livraria.autores
-where Num_Pag > '200';
+where Num_Pag > '200' and Editora = 'Sextante';
 
 -- 10° Trazer o nome do livro, autores, valor com capa comum com valor maior que R$ 30,00 na editora Sextante
 
